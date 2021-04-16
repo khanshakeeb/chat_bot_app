@@ -7,7 +7,7 @@ export default (app)=>{
         })
     });
 
-    app.get('/api/v1/connect',messenger.connect);
-    app.post('/api/v1/messenger',messenger.send);
+    app.post('/api/v1/connect',messenger.connect);
+    app.post('/api/v1/send',messenger.send);
 
 };

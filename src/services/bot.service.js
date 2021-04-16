@@ -11,8 +11,7 @@ class BotService {
         try {
             const response = await this.client.create('/intents', {
                 botId: this.botId,
-                message: data.message,
-                conversationId: data.conversationId
+                ...data
             });
            return response;
 
